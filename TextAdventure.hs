@@ -1,6 +1,7 @@
 import System.IO
 
 import Commands
+import Tools
 
 
 -- Introduction of textAdveture
@@ -14,13 +15,25 @@ printIntro =
                         "juego el jugador deberá decidir como continúa la historia introduciendo oraciones que",
                         "describan una acción que el personaje debe realizar hasta llegar al final de la historia"]
 
+play :: Player -> IO ()
+play player = do
+    line <- getLine
+    
+    return ()
+
+
 
 -- Start
-begin :: IO ()
-begin = do
+main :: IO ()
+main = do
     printIntro
     putStr "Comencemos...\n"
     putStrLn "Hola, qué nombre le gustaría poner a su personaje"
     name <- getLine
     putStrLn ("\nBueno " ++ name ++ " estos comandos son comandos que puedes usar")
     getCommands
+    putStr "Presiona Enter para continuar..."
+    getLine
+    -- imprimir primera escena
+    play (name, [])
+    return ()  

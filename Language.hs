@@ -1,0 +1,15 @@
+
+
+
+verbs ::
+verbs =
+    [
+        ()
+    ]
+
+
+nouns ::
+nouns =
+    [
+
+    ]

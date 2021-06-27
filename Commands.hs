@@ -1,6 +1,8 @@
 
 module Commands (getCommands,
                  getInventory,
+                 getHelp,
+                 quit,
                  ) where
 
 import Tools
@@ -10,11 +12,10 @@ import System.IO
 getCommands :: IO ()
 getCommands = 
     putStrLn $ unlines ["Comandos",
-                        "jugar       -- comenzar el juego",
                         "c           -- comandos",
                         "i           -- inventario",
                         "h           -- ayuda",       
-                        "salir       -- salir del juego\n"]
+                        "salir       -- salir del juego"]
 
 
 getInventory :: ObjectMap -> IO ()
@@ -27,4 +28,12 @@ getInventory objectsMap =
 
 getHelp :: IO ()
 getHelp = 
-    putStrLn $ unlines []
+    putStrLn $ unlines ["Utiliza oraciones simples describiendo la acción que deseas realizar según ",
+                        "la situación",
+                        "Ejemplo -- "]   -- actualizaaaaaaaaaaar
+
+
+quit :: IO ()
+quit = 
+    putStrLn "Hasta Pronto!!!"
+    return ()

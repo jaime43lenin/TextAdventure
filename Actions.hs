@@ -1,5 +1,5 @@
 
-module Actions (takeObject) where
+module Actions () where
 
 import Tools
 
@@ -7,18 +7,20 @@ import Tools
 
 takeObject :: Object -> ObjectMap -> IO ()
 takeObject object objectsMap = 
-    let playerLocation = getLocation "player" objectsMap
-        objectLocation = getLocation object objectsMap
-    in if playerLocation == objectLocation
+    let playerSituation = getSituation "player" objectsMap
+        objectSituation = getSituation object objectsMap
+    in if playerSituation == objectSituation
         then do
-            putLocation object objectsMap "inventory"
+            putSituation object objectsMap "inventory"
             putStrLn "Has agregado este objeto a tu inventario"
         else 
-            if objectLocation == "inventory"
+            if objectSituation == "inventory"
                 then putStrLn "Ya tienes ese objeto en el inventario"
                 else putStrLn "Mmmm... ese objeto no está aquí"
 
 
 useObject :: Object -> ObjectMap -> IO ()
-useObject object objectsMap =
+
+
+moveTo :: Player -> IO()
     
