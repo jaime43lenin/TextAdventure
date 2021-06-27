@@ -24,14 +24,17 @@ type World = (SituationId, ObjectMap, Response)
 objectsMap :: ObjectMap
 objectsMap =
     [
-        ("player", "alive")
+        ("player", "alive"),
+        ("documento", "gabetero"),
+        ("billetes", "gabetero"),
+        ("pistola", "cuerpo"),
+        ("placa", "cuerpo")
     ]
 
 
 
 -- get the location of an object
-getSituation :: Object -> ObjectMap -> Situation
-getSituation object [] = "0"
+getSituation :: Object -> ObjectMap -> SituationId
 getSituation object ((obj, sit):r) = 
     if object == obj
         then sit
@@ -39,7 +42,7 @@ getSituation object ((obj, sit):r) =
 
 
 -- change the location of an object
-putSituation :: Object -> ObjectMap -> Situation -> ObjectMap
+putSituation :: Object -> ObjectMap -> SituationId -> ObjectMap
 putSituation object objectsMap situation = 
     let without = filter (/(x, y) -> x /= object) objectsMap
     in (object, situation) : without
@@ -48,4 +51,8 @@ putSituation object objectsMap situation =
 -- game over
 gameOver :: ObjectMap -> Bool
 gameOver objectsMap =
-    
+
+
+-- execute an action
+execute :: Action -> SituationId -> World
+execute ((verb, noun), object) situation =

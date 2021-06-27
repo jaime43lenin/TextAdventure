@@ -4,7 +4,7 @@ module Language (verbs,
 
 
 
-verbs ::
+verbs :: [(Verb, Verb)]
 verbs =
     [
         ()

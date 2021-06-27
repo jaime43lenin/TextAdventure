@@ -1,5 +1,8 @@
 
 
+module Parser (parser) where
+
+
 import Language
 import Tools
 import Data.List
@@ -32,6 +35,6 @@ geObject input (object:r) =
 -- parse the player input into an Action
 parser :: String -> ObjectMap -> [(Verb, Verb)] -> [(Noun, Noun)] -> Action
 parser line objectsMap verbs nouns =
-    let command = words line
+    let command = words (map toUpper line)
         objects = [obj | (obj, situation) <- objectsMap]
     in ((getVerb command verbs, getNoun command nouns), getObject command objects)

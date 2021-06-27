@@ -2,6 +2,8 @@ import System.IO
 
 import Commands
 import Tools
+import Parser
+import Language
 
 
 -- Introduction of textAdveture
@@ -25,6 +27,9 @@ play (situation, objectsMap, response) = do
         else do
             putStr ">> "
             input <- getLine
+            action <- parser input objectsMap verbs nouns
+            world <- execute action
+            play world
 
 
 -- Start

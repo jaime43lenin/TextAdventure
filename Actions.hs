@@ -30,13 +30,11 @@ dropObject object objectsMap situation =
         else (situation, objectsMap, "Upss... no tienes este objeto")
 
 
--- the player attack 
-attack :: 
-
-
 -- the player use de object in the inventory
 useObject :: Object -> Noun -> ObjectMap -> SituationId -> World
-useObject object against objectsMap situation = 
+useObject "billete" "conductor" objectsMap situation = 
+useObject "pistola" "conductor" objectsMap situation = 
+useObject "pistola" "policia" objectsMap situation = 
 
 
 -- the player move to another situation
