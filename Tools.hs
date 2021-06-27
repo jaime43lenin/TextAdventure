@@ -1,10 +1,12 @@
 
-
-module Tools (Player,
-              Object,
-              Situation,
+module Tools (Object,
+              SituationId,
               ObjectMap,
-              objectsMap
+              Action,
+              World,
+              objectsMap,
+              getSituation,
+              putSituation
               ) where
 
 
@@ -12,10 +14,9 @@ type Status = String
 type Object = (String, Status)
 type SituationId = String
 type ObjectMap = [(Object, SituationId)]
-type PathMap = [((SituationId, String), SituationId)]
 type Verb = String
-type Noun = String
-type Action = ((Verb, Noun), Object)
+type Noun = String           
+type Action = ((Verb, Noun), String) -- the last argument represent an object
 type World = (SituationId, ObjectMap, Response)
 
 
@@ -23,16 +24,9 @@ type World = (SituationId, ObjectMap, Response)
 objectsMap :: ObjectMap
 objectsMap =
     [
-
+        ("player", "alive")
     ]
 
-
--- map of possible paths in the world
-pathsMap :: PathMap
-pathsMap =
-    [
-
-    ]
 
 
 -- get the location of an object
@@ -49,3 +43,9 @@ putSituation :: Object -> ObjectMap -> Situation -> ObjectMap
 putSituation object objectsMap situation = 
     let without = filter (/(x, y) -> x /= object) objectsMap
     in (object, situation) : without
+
+
+-- game over
+gameOver :: ObjectMap -> Bool
+gameOver objectsMap =
+    

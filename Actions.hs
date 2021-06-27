@@ -1,6 +1,8 @@
 
 module Actions (takeObject,
-                dropObject) where
+                dropObject,
+                useObject,
+                moveTo) where
 
 import Tools
 
@@ -28,10 +30,13 @@ dropObject object objectsMap situation =
         else (situation, objectsMap, "Upss... no tienes este objeto")
 
 
+-- the player attack 
+attack :: 
+
+
 -- the player use de object in the inventory
-useObject :: Object -> ObjectMap -> SituationId -> World
-useObject object objectsMap situation =
-    let objectSituation = getSituation object objectsMap
+useObject :: Object -> Noun -> ObjectMap -> SituationId -> World
+useObject object against objectsMap situation = 
 
 
 -- the player move to another situation

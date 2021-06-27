@@ -15,7 +15,7 @@ getCommands =
                         "c           -- comandos",
                         "i           -- inventario",
                         "h           -- ayuda",       
-                        "salir       -- salir del juego"]
+                        "s           -- salir del juego"]
 
 
 getInventory :: ObjectMap -> IO ()
