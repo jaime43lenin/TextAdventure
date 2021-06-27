@@ -15,16 +15,19 @@ printIntro =
                         "juego el jugador deberá decidir como continúa la historia introduciendo oraciones que",
                         "describan una acción que el personaje debe realizar hasta llegar al final de la historia"]
 
-play :: Player -> IO ()
-play player = do
-    line <- getLine
-    
-    return ()
+play :: IO (World)
+play = do
+    if gameOver objectsMap  -- hacer gameOver
+        then return ()
+        else do
+            putStr "comando>"
+            input <- getLine
+
 
 
 
 -- Start
-main :: IO ()
+main :: IO (World)
 main = do
     printIntro
     putStr "Comencemos...\n"
@@ -34,6 +37,5 @@ main = do
     getCommands
     putStr "Presiona Enter para continuar..."
     getLine
-    -- imprimir primera escena
-    play (name, [])
+    play
     return ()  
