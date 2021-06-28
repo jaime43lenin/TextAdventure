@@ -39,7 +39,7 @@ play (situation, objectsMap, response) = do
     putStrLn response
     putStr "\n"
     if gameOver situation
-        then return ("", [], "")
+        then return ("", [], "Fin")
         else do
             putStr ">> "
             input <- getLine

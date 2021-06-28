@@ -43,7 +43,7 @@ getSituationDescription "2.1" =
 getSituationDescription "3" =
     "Logras abrir la puerta. Te das cuenta que estás en una cabaña en una ladera de una montaña\n"
     ++"Miras a tu alrededor y puedes ver que está atardeciendo, se puede ver a lo lejos una carretera.\n"
-    ++"Un impetuoso bosque precede a la cabaña pero antes de tomar cualquier decisión...\n"
+    ++"Pero antes de tomar cualquier decisión...\n"
     ++"tienes a tus pies un cuerpo con un tiro en la sien\n"
 getSituationDescription "3.1" =
     "Al registrar el cuerpo encuentras " -- una pistola con 3 balas y una placa de inspector
