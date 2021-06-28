@@ -41,7 +41,7 @@ getSituationDescription "2.1" =
 getSituationDescription "3" =
     "Logras abrir la puerta. Te das cuenta que estás en una cabaña en una ladera de una montaña\n"
     ++"Miras a tu alrededor y puedes ver que está atardeciendo, se puede ver a lo lejos una carretera.\n"
-    ++"Un impetuoso bosque prescede a la cabaña pero antes de tomar cualquier decisión...\n"
+    ++"Un impetuoso bosque precede a la cabaña pero antes de tomar cualquier decisión...\n"
     ++"tienes a tus pies un cuerpo con un tiro en la sien\n"
 getSituationDescription "3.1" =
     "Al registrar el cuerpo encuentras ..." -- una pistola con 3 balas y una placa de inspector
@@ -71,9 +71,9 @@ getSituationDescription "10" = --Final
 	"Entre los choques de la persecución y los disparos hieren al chofer del auto en el que vas saliendose\n"
 	++"este de la carretera\n"
 	++"Los que los persiguen se detienen y se acercan a ti herido por el accidente del coche y te dan un disparo\n"
-	++"el la cabeza...\n"
+	++"en la cabeza...\n"
 getSituationDescription "11" = --Final
-	"LLegas a casa seguido por otro coche, estos se bajan y reconoces una de las voces de los secuestradores dándote\n"
+	"Llegas a casa seguido por otro coche, estos se bajan y reconoces una de las voces de los secuestradores dándote\n"
 	++"cuenta que los habías llevado hasta donde estaba tu familia\n"
 	++"Todos son asesinados en el interior de la casa\n"
 getSituationDescription "12" = 
