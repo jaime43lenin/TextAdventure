@@ -37,7 +37,7 @@ execute ((verb, noun), object) situation objectsMap
 play :: World -> IO (World)
 play (situation, objectsMap, response) = do
     putStrLn response
-    putStrLn "\n"
+    putStr "\n"
     if gameOver situation
         then return ("", [], "")
         else do
@@ -56,8 +56,8 @@ play (situation, objectsMap, response) = do
 main :: IO (World)
 main = do
     printIntro
-    putStr "Comencemos...\n"
-    putStrLn ("\nEstos comandos son comandos que puedes usar")
+    putStr "Comencemos..."
+    putStrLn ("Estos comandos son comandos que puedes usar")
     putStrLn getCommands
     putStr "Presiona Enter para continuar..."
     getLine

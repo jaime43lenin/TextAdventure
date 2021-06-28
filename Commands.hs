@@ -12,7 +12,7 @@ getCommands = "Comandos \n"
               ++"c           -- comandos \n"
               ++"i           -- inventario \n"
               ++"h           -- ayuda \n"       
-              ++"s           -- salir del juego"
+              ++"s           -- salir del juego\n"
 
 
 getInventory :: ObjectMap -> String

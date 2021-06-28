@@ -25,10 +25,10 @@ getObjectHere situation objectsMap =
 -- return the description of situations
 getSituationDescription :: SituationId -> String
 getSituationDescription "0" =
-    "Al caer la tarde estas llegando a casa cuando de repente se nubla tu vista, \n"
-    ++"pierdes el control de tu cuerpo y todo lo que vez son destellos de luz... \n"
+    "\nAl caer la tarde estas llegando a casa cuando de repente se nubla tu vista, \n"
+    ++"pierdes el control de tu cuerpo y todo lo que vez son destellos de luz...\n"
 getSituationDescription "1" =
-    "Recobras la conciencia y escuchas voces, te percatas que tienes \n"
+    "\nRecobras la conciencia y escuchas voces, te percatas que tienes \n"
     ++"la cabeza tapada con una especie de saco negro y percibes que estas en un coche en movimiento... \n"
     ++"El coche se detiene y te bajan a rastras, sientes frío y la hierba húmeda en tus pies descalzos,\n"
     ++"No tienes fuerzas siquiera para hablar y no entiendes bien lo que hablan, logras identificar otro\n"
@@ -39,14 +39,14 @@ getSituationDescription "2" =
     ++"logras recuperar casi completamente tus sentidos pudiendo ver que la puerta no tiene \n"
     ++"seguro y que hay un gabetero detrás tuyo"
 getSituationDescription "2.1" = 
-    "Abres el gabetero y encuentras ... " --un documento con todos tus datos firmado por el departamento de policia y 2 billetes de 20 dolares
+    "Abres el gabetero y encuentras " --un documento con todos tus datos firmado por el departamento de policia y 2 billetes de 20 dolares
 getSituationDescription "3" =
     "Logras abrir la puerta. Te das cuenta que estás en una cabaña en una ladera de una montaña\n"
     ++"Miras a tu alrededor y puedes ver que está atardeciendo, se puede ver a lo lejos una carretera.\n"
     ++"Un impetuoso bosque prescede a la cabaña pero antes de tomar cualquier decisión...\n"
     ++"tienes a tus pies un cuerpo con un tiro en la sien\n"
 getSituationDescription "3.1" =
-    "Al registrar el cuerpo encuentras ..." -- una pistola con 3 balas y una placa de inspector
+    "Al registrar el cuerpo encuentras " -- una pistola con 3 balas y una placa de inspector
 getSituationDescription "4" = 
     "En shock todavía pero con la vista clara llegas a la carretera y ves que está al borde de la ladera\n"
     ++"Te recuestas a la baranda para no caerte al vacío y recuperar fuerzas"

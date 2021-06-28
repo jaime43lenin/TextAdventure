@@ -23,6 +23,7 @@ getNoun input ((inp, noun):r) =
 
 -- get the object in the player input
 getObject :: [String] -> [String] -> String
+getObject input [] = ""
 getObject input (object:r) =
     if object `elem` input
         then object
