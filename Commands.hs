@@ -1,4 +1,3 @@
-
 module Commands (getCommands,
                  getInventory,
                  getHelp,
@@ -6,34 +5,28 @@ module Commands (getCommands,
                  ) where
 
 import Tools
-import System.IO
 
 
-getCommands :: IO ()
-getCommands = 
-    putStrLn $ unlines ["Comandos",
-                        "c           -- comandos",
-                        "i           -- inventario",
-                        "h           -- ayuda",       
-                        "s           -- salir del juego"]
+getCommands :: String
+getCommands = "Comandos \n"
+              ++"c           -- comandos \n"
+              ++"i           -- inventario \n"
+              ++"h           -- ayuda \n"       
+              ++"s           -- salir del juego"
 
 
-getInventory :: ObjectMap -> IO ()
+getInventory :: ObjectMap -> String
 getInventory objectsMap = 
     let player_objects = [object | (object, "inventory") <- objectsMap]
     in if player_objects == []
-        then putStrLn ("Inventario\n" ++ "-----------\n" ++ "El inventario está vacío")
-        else putStrLn ("Inventario\n" ++ "-----------\n" ++ (unlines (map (++"\n") player_objects)))
+        then "Inventario\n" ++ "-----------\n" ++ "El inventario está vacío"
+        else "Inventario\n" ++ "-----------\n" ++ (unlines (map (++"\n") player_objects))
 
 
-getHelp :: IO ()
-getHelp = 
-    putStrLn $ unlines ["Utiliza oraciones simples describiendo la acción que deseas realizar según ",
-                        "la situación",
-                        "Ejemplo -- "]   -- actualizaaaaaaaaaaar
+getHelp :: String
+getHelp = "Utiliza oraciones simples describiendo la acción que deseas realizar según \n"
+           ++"la situación"
 
 
-quit :: IO ()
-quit = 
-    putStrLn "Hasta Pronto!!!"
-    return ()
+quit :: String
+quit = "Hasta Pronto!!!"

@@ -31,11 +31,16 @@ dropObject object objectsMap situation =
 
 -- the player use de object in the inventory
 useObject :: Object -> Noun -> ObjectMap -> SituationId -> World
-useObject "billete" "conductor" objectsMap situation = 
-useObject "pistola" "conductor" objectsMap situation = 
-useObject "pistola" "policia" objectsMap situation = 
+useObject "billetes" "conductor" objectsMap "5" = 
+    ("6", (putSituation "billetes" objectsMap "useless"), (getSituationDescription "6"))
+useObject "pistola" "conductor" objectsMap situation = ("17", objectsMap, (getSituationDescription "17"))
+useObject "pistola" "policia" objectsMap situation = ("13", objectsMap, (getSituationDescription "13"))
+useObject "pistola" "perseguidores" objectsMap situacion = ("9", objectsMap, (getSituationDescription "9"))
+useObject _ _ objectsMap situation = (situation, objectsMap, "No puedes usar ese objeto para eso")
 
 
 -- the player move to another situation
-moveTo :: Object -> ObjectMap -> SituationId -> World
-moveTo object objectsMap situation = 
+moveTo :: SituationId -> String -> ObjectMap -> World
+moveTo "2" "puerta" objectsMap = ("3", objectsMap, (getSituationDescription "3"))
+moveTo "2.1" "puerta" objectsMap = ("3", objectsMap, (getSituationDescription "3"))
+moveTo "3" "carrtera" objectsMap = ("4", objectsMap, (getSituationDescription "4"))

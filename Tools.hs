@@ -11,12 +11,11 @@ module Tools (Status,
               World,
               objectsMap,
               getSituation,
-              putSituation, 
-              gameOver,
-              execute
+              putSituation
               ) where
 
 import Data.List
+import Commands
 
 type Status = String
 type Object = String
@@ -35,7 +34,6 @@ type World = (SituationId, ObjectMap, Response)
 objectsMap :: ObjectMap
 objectsMap =
     [
-        ("player", "alive"),
         ("documento", "2.1"),
         ("billetes", "2.1"),
         ("pistola", "3.1"),
@@ -56,13 +54,3 @@ putSituation :: Object -> ObjectMap -> SituationId -> ObjectMap
 putSituation object objectsMap situation = 
     let without = filter (\(x, y) -> x /= object) objectsMap
     in (object, situation) : without
-
-
--- game over
-gameOver :: ObjectMap -> Bool
-gameOver objectsMap = True
-
-
--- execute an action
-execute :: Action -> SituationId -> World
-execute ((verb, noun), object) situation = ("", [], "")

@@ -36,7 +36,6 @@ executeAction "5" (("dejar ir", "conductor"), "") objectsMap =
 executeAction "5" _ objectsMap =
 
 executeAction "6" (("contarle", "conductor"), "") objectsMap =
-executeAction "6" (("matar", "conductor"), "") objectsMap =
 executeAction "6" _ objectsMap =
 
 executeAction "7" (("contarle", "conductor"), "") objectsMap =
