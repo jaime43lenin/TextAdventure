@@ -5,6 +5,7 @@ module Actions (takeObject,
                 moveTo) where
 
 import Tools
+import Description
 
 
 -- the player take an object
