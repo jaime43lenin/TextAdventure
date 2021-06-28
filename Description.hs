@@ -47,4 +47,34 @@ getSituationDescription "6" =
     ++"El conductor te pregunta que hacias divagando por la carretera solo y cerca de \n"
     ++"la noche\n"
 getSituationDescription "7" = 
-    "Tras contarle lo sucedido al conductor "
+    "Tras contarle lo sucedido al conductor este decide llevarte hasta tu casa con tu familia...\n"
+    ++"Dadala longitud del paran en una gasolinera. Luego de reanudar el viaje te das cuenta que los\n"
+    ++"estan siguiendo"
+getSituationDescription "8" =
+    "El conductor decide acelerar y los que los persiguen comienzan a disparar"
+getSituationDescription "9" = --Final
+	"Logras en el ultimo disparo herir al conductor del otro vehiculo sacandolos asi de la carretera\n"
+	++"lo que les permite escapar\n"
+	++"Despues de unas horas llegan a tu casa a salvo con tu familia"
+getSituationDescription "16" = --FInal
+	"Entre los choques de la persecucion y los disparos hieren al chofer del auto en el que vas saliendose\n"
+	++"este de la carretera\n"
+	++"Los que los persiguen se detienen y se acercan a ti herido por el accidente del coche y te dan un disparo\n"
+	++"el la cabeza.....\n"
+getSituationDescription "10" = 
+	"LLegas a casa seguido por otro coche, estes se bajan y reconoces una de las voces de los secuestradores dandote\n"
+	++"cuenta que los habias llevado hasta donde estaba tu familia\n"
+	++"Todos son asesinados en el interior de la casa\n"
+getSituationDescription "11" = 
+	"Se acerca un coche de policia. Este al verte se detiene se t acerca y te pregunta si eres de por aqui. Reconoces\n"
+	++"la voz como uno de los secuestradores ....\n"
+getSituationDescription "12" = 
+	"Logras acabar con el secuestrador ahora estas solo con un cadaver uniformado, un coche de policia\n"
+getSituationDescription "13" = --Final
+	"El secuestrador te atrapa nuevamente, esta vez te meten en el baul del coche"
+getSituationDescription "14" = --Final
+	"Huyes en el coche de policia logrando llegar a salvo a casa"
+getSituationDescription "15" = 
+	"Mueres al caer la noche estabas muy debil y los animales se adueñan de tu cuerpo"
+getSituationDescription "16" =
+	"La situacion se pone tensa el conductor acelera y disparas hiriendolo y al perder el control este cae por la ladera\n"
