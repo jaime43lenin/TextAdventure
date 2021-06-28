@@ -1,6 +1,6 @@
 module Description (getObjectsDescription,
+                    getObjectHere,
                     getSituationDescription) where
-
 
 import Tools
 
@@ -18,16 +18,16 @@ getObjectHere :: SituationId -> ObjectMap -> String
 getObjectHere situation objectsMap =
     let objectsHere = [getObjectsDescription obj | (obj, sit) <- objectsMap, sit == situacion]
     in intercalate ", " objectsHere
-    
+
 
 -- return the description of situations
 getSituationDescription :: SituationId -> String
 getSituationDescription "0" =
     "Al caer la tarde estas llegando a casa cuando de repente se nubla tu vista, \n"
-    ++"pierdes el control de tu cuerpo y todo lo que vez son destellos de luz ...."
+    ++"pierdes el control de tu cuerpo y todo lo que vez son destellos de luz..."
 getSituationDescription "1" =
-    "Recobras la conciencia y escuchas voces, te percatas que tienes las manos atadas\n"
-    ++"y la cabeza tapada con una especie de saco negro\n"
+    "Recobras la conciencia y escuchas voces, te percatas que tienes \n"
+    ++"la cabeza tapada con una especie de saco negro\n"
     ++"El coche se detiene y te bajan a rastras, sientes frio y la hierba humeda en tus pies descalzos\n"
     ++"no tienes fuezas siquiera para hablar y no entiendes bien lo que hablan, logras identificar otro\n"
     ++"idioma pero no lo tines claro y te dejan tendido en el suelo.\n"
@@ -54,7 +54,7 @@ getSituationDescription "5" =
     ++ "El conductor un hombre no muy bien vestido con un tabaco en la boca y manos de mecanico te\n"
     ++ "ofrece llevarte al pueblo mas cercano por 40 dolares"
 getSituationDescription "6" =
-    "Le pagas con los billetes que habias encontrado en la cabaña y t subes al auto\n"
+    "Le pagas con los billetes que habias encontrado en la cabaña y te subes al auto\n"
     ++"El conductor te pregunta que hacias divagando por la carretera solo y cerca de \n"
     ++"la noche\n"
 getSituationDescription "7" = 
@@ -72,13 +72,13 @@ getSituationDescription "10" = --Final
 	++"este de la carretera\n"
 	++"Los que los persiguen se detienen y se acercan a ti herido por el accidente del coche y te dan un disparo\n"
 	++"el la cabeza.....\n"
-getSituationDescription "11" = 
+getSituationDescription "11" = --Final
 	"LLegas a casa seguido por otro coche, estes se bajan y reconoces una de las voces de los secuestradores dandote\n"
 	++"cuenta que los habias llevado hasta donde estaba tu familia\n"
 	++"Todos son asesinados en el interior de la casa\n"
 getSituationDescription "12" = 
-	"Se acerca un coche de policia. Este al verte se detiene se t acerca y te pregunta si eres de por aqui. Reconoces\n"
-	++"la voz como uno de los secuestradores ....\n"
+	"Se acerca un coche de policia. Este al verte se detiene se te acerca y te pregunta si eres de por aqui. Reconoces\n"
+	++"la voz como uno de los secuestradores...\n"
 getSituationDescription "13" = 
 	"Logras acabar con el secuestrador ahora estas solo con un cadaver uniformado, un coche de policia\n"
 getSituationDescription "14" = --Final
