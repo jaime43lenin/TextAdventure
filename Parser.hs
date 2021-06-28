@@ -7,6 +7,7 @@ import Data.List
 
 -- get the verb in the player input
 getVerb :: [String] -> [(Verb, Verb)] -> Verb 
+getVerb input [] = "none"
 getVerb input ((inp, verb):r) =
     if inp `elem` input
         then verb
@@ -15,6 +16,7 @@ getVerb input ((inp, verb):r) =
 
 -- get the noun in the player input
 getNoun :: [String] -> [(Noun, Noun)] -> Noun
+getNoun input [] = "none"
 getNoun input ((inp, noun):r) =
     if inp `elem` input
         then noun
@@ -22,8 +24,8 @@ getNoun input ((inp, noun):r) =
 
 
 -- get the object in the player input
-getObject :: [String] -> [String] -> String
-getObject input [] = ""
+getObject :: [String] -> [Object] -> String
+getObject input [] = "none"
 getObject input (object:r) =
     if object `elem` input
         then object

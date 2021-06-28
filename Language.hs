@@ -10,18 +10,44 @@ verbs =
         ("c", "c"),
         ("i", "i"),
         ("h", "h"),
+
         ("ir", "ir"),
         ("caminar", "ir"),
+        ("correr", "ir"),
+
         ("dejar", "dejar"),
+        ("ignorar", "dejar"),
+
         ("disparar", "disparar"),
         ("matar", "disparar"),
+
         ("quitar", "quitar"),
+        ("deshacerme", "quitar"),
+        ("librarme", "quitar"),
+
         ("huir", "huir"),
+        ("escapar", "huir"),
+
         ("tomar", "tomar"),
+        ("coger", "tomar"),
+
         ("inspeccionar", "inspeccionar"),
+        ("investigar", "inspeccionar"),
+        ("ver", "inspeccionar"),
+        ("registrar", "inspeccionar"),
+        ("abrir", "inspeccionar"),
+
         ("esperar", "esperar"),
+
         ("amenazar", "amenazar"),
-        ("contar", "contar")
+        ("intimidar", "amenazar"),
+
+        ("contar", "contar"),
+        ("contarle", "contar"),
+        ("decir", "contar"),
+        ("decirle", "contar"),
+
+        ("salir", "salir")
     ]
 
 

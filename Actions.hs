@@ -11,9 +11,8 @@ import Description
 -- the player take an object
 takeObject :: Object -> ObjectMap -> SituationId -> World
 takeObject object objectsMap situation = 
-    let playerSituation = getSituation "player" objectsMap
-        objectSituation = getSituation object objectsMap
-    in if playerSituation == objectSituation
+    let objectSituation = getSituation object objectsMap
+    in if situation == objectSituation
         then (situation, (putSituation object objectsMap "inventory"), "Has agregado el objeto a tu inventario")
         else 
             if objectSituation == "inventory"
@@ -24,10 +23,9 @@ takeObject object objectsMap situation =
 -- the player drop an object
 dropObject :: Object -> ObjectMap -> SituationId -> World
 dropObject object objectsMap situation = 
-    let playerSituation = getSituation "player" objectsMap
-        objectSituation = getSituation object objectsMap
+    let objectSituation = getSituation object objectsMap
     in if objectSituation == "inventory"
-        then (situation, (putSituation object objectsMap playerSituation), "Entendido. Has soltado el objeto")
+        then (situation, (putSituation object objectsMap situation), "Entendido. Has soltado el objeto")
         else (situation, objectsMap, "Upss... no tienes este objeto")
 
 

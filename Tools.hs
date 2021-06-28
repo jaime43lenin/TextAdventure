@@ -33,7 +33,6 @@ type World = (SituationId, ObjectMap, Response)
 objectsMap :: ObjectMap
 objectsMap =
     [
-        ("saco", "2"),
         ("documento", "2.1"),
         ("billetes", "2.1"),
         ("pistola", "3.1"),

@@ -70,14 +70,14 @@ getSituationDescription "9" = --Final
     ++"lo que les permite escapar.\n"
     ++"Después de unas horas llegan a tu casa a salvo con tu familia"
 getSituationDescription "10" = --Final
-	"Entre los choques de la persecución y los disparos hieren al chofer del auto en el que vas saliendose\n"
-	++"este de la carretera\n"
-	++"Los que los persiguen se detienen y se acercan a ti herido por el accidente del coche y te dan un disparo\n"
-	++"en la cabeza...\n"
+    "Entre los choques de la persecución y los disparos hieren al chofer del auto en el que vas saliendose\n"
+    ++"este de la carretera\n"
+    ++"Los que los persiguen se detienen y se acercan a ti herido por el accidente del coche y te dan un disparo\n"
+    ++"en la cabeza...\n"
 getSituationDescription "11" = --Final
-	"Llegas a casa seguido por otro coche, estos se bajan y reconoces una de las voces de los secuestradores dándote\n"
-	++"cuenta que los habías llevado hasta donde estaba tu familia\n"
-	++"Todos son asesinados en el interior de la casa\n"
+    "Llegas a casa seguido por otro coche, estos se bajan y reconoces una de las voces de los secuestradores dándote\n"
+    ++"cuenta que los habías llevado hasta donde estaba tu familia\n"
+    ++"Todos son asesinados en el interior de la casa\n"
 getSituationDescription "12" = 
     "Se acerca un coche de policía. Este al verte se detiene se te acerca y te pregunta si eres de por aquí. Reconoces\n"
     ++"la voz como uno de los secuestradores...\n"

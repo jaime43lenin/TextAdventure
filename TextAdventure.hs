@@ -56,7 +56,7 @@ play (situation, objectsMap, response) = do
 main :: IO (World)
 main = do
     printIntro
-    putStr "Comencemos..."
+    putStrLn "Comencemos..."
     putStrLn ("Estos comandos son comandos que puedes usar")
     putStrLn getCommands
     putStr "Presiona Enter para continuar..."
