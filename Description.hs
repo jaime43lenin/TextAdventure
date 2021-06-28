@@ -3,6 +3,13 @@ module Description (getSituationDescription) where
 import Tools
 
 
+getObjectDescription :: ObjectMap -> SituationId -> String
+getObjectDescription objectsMap situation =
+    let objectsHere = filter (\(x, y) -> y == situation) objectsMap
+    in 
+
+
+
 getSituationDescription :: SituationId -> String
 getSituationDescription "0" =
     "Al caer la tarde estas llegando a casa cuando de repente se nubla tu vista, \n"

@@ -1,4 +1,3 @@
-
 module Tools (Object,
               SituationId,
               ObjectMap,
@@ -11,7 +10,7 @@ module Tools (Object,
 
 
 type Status = String
-type Object = (String, Status)
+type Object = String
 type SituationId = String
 type ObjectMap = [(Object, SituationId)]
 type Verb = String
@@ -44,7 +43,7 @@ getSituation object ((obj, sit):r) =
 -- change the location of an object
 putSituation :: Object -> ObjectMap -> SituationId -> ObjectMap
 putSituation object objectsMap situation = 
-    let without = filter (/(x, y) -> x /= object) objectsMap
+    let without = filter (\(x, y) -> x /= object) objectsMap
     in (object, situation) : without
 
 
