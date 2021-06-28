@@ -24,6 +24,7 @@ verbs =
         ("matar", "disparar"),
 
         ("quitar", "quitar"),
+        ("quitarme", "quitar"),
         ("deshacerme", "quitar"),
         ("librarme", "quitar"),
 
@@ -91,14 +92,15 @@ nouns =
 
         ("carretera", "carretera"),
 
+        ("perseguidores", "perseguidores"),
+        ("secuestradores" , "perseguidores"),
+
+        ("policia", "policia"),
+
         ("pistola", "pistola"),
         ("arma", "pistola"),
 
         ("placa", "placa"),
-
-
-        ("perseguidores", "perseguidores"),
-        ("secuestradores" , "perseguidores"),
 
         ("coche", "coche"),
         ("carro", "coche")

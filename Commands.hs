@@ -25,7 +25,10 @@ getInventory objectsMap =
 
 getHelp :: String
 getHelp = "Utiliza oraciones simples describiendo la acción que deseas realizar según \n"
-           ++"la situación"
+           ++"la situación.\n"
+           ++"Todo lo que escribas debe estar en minúsculas y ser lo más claro posible en tus ideas\n"
+           ++"Ejemplo -- caminar a la puerta\n"
+           ++"            salir de la habitacion" 
 
 
 quit :: String
