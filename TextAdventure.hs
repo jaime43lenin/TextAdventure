@@ -43,5 +43,5 @@ main = do
     getCommands
     putStr "Presiona Enter para continuar..."
     getLine
-    play ("1", objectsMap, "")
+    play ("1", objectsMap, (getSituationDescription "0") ++ (getSituationDescription "1"))
     return ("", [], "")  

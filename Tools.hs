@@ -1,21 +1,33 @@
-module Tools (Object,
+module Tools (Status,
+              Object,
               SituationId,
               ObjectMap,
+              Description,
+              ObjectDescriptions,
+              Verb,
+              Noun,
               Action,
+              Response,
               World,
               objectsMap,
               getSituation,
-              putSituation
+              putSituation, 
+              gameOver,
+              execute
               ) where
 
+import Data.List
 
 type Status = String
 type Object = String
 type SituationId = String
 type ObjectMap = [(Object, SituationId)]
+type Description = String
+type ObjectDescriptions = [(Object, Description)]
 type Verb = String
 type Noun = String           
-type Action = ((Verb, Noun), String) -- the last argument represent an object
+type Action = ((Verb, Noun), String) -- the last argument represent an object that the player can use
+type Response = String
 type World = (SituationId, ObjectMap, Response)
 
 
@@ -24,12 +36,11 @@ objectsMap :: ObjectMap
 objectsMap =
     [
         ("player", "alive"),
-        ("documento", "gabetero"),
-        ("billetes", "gabetero"),
-        ("pistola", "cuerpo"),
-        ("placa", "cuerpo")
+        ("documento", "2.1"),
+        ("billetes", "2.1"),
+        ("pistola", "3.1"),
+        ("placa", "3.1")
     ]
-
 
 
 -- get the location of an object
@@ -49,9 +60,9 @@ putSituation object objectsMap situation =
 
 -- game over
 gameOver :: ObjectMap -> Bool
-gameOver objectsMap =
+gameOver objectsMap = True
 
 
 -- execute an action
 execute :: Action -> SituationId -> World
-execute ((verb, noun), object) situation =
+execute ((verb, noun), object) situation = ("", [], "")

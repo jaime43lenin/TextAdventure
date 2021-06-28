@@ -2,16 +2,17 @@
 module Language (verbs,
                  nouns) where
 
+import Tools
 
 
 verbs :: [(Verb, Verb)]
 verbs =
     [
-        ()
+        
     ]
 
 
-nouns ::
+nouns :: [(Noun, Noun)]
 nouns =
     [
 
