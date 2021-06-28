@@ -1,6 +1,7 @@
 module Actions (takeObject,
                 dropObject,
                 useObject,
+                inspectObject,
                 moveTo) where
 
 import Tools
@@ -39,8 +40,18 @@ useObject "pistola" "perseguidores" objectsMap situacion = ("9", objectsMap, (ge
 useObject _ _ objectsMap situation = (situation, objectsMap, "No puedes usar ese objeto para eso")
 
 
+-- the player decide to inspect an object
+inspectObject :: SituationId -> ObjectMap -> World
+inspectObject "2" objectsMap = ("2.1", objectsMap, (getSituationDescription "2.1") ++ (getObjectHere "2.1" objectsMap))
+inspectObject "3" objectsMap = ("3.1", objectsMap, (getSituationDescription "3.1") ++ (getObjectHere "3.1" objectsMap))
+inspectObject situation objectsMap = (situation, objectsMap, "No hay nada aquí")
+
+
 -- the player move to another situation
 moveTo :: SituationId -> String -> ObjectMap -> World
 moveTo "2" "puerta" objectsMap = ("3", objectsMap, (getSituationDescription "3"))
 moveTo "2.1" "puerta" objectsMap = ("3", objectsMap, (getSituationDescription "3"))
-moveTo "3" "carrtera" objectsMap = ("4", objectsMap, (getSituationDescription "4"))
+moveTo "3" "carretera" objectsMap = ("4", objectsMap, (getSituationDescription "4"))
+moveTo "3.1" "carretera" objectsMap = ("4", objectsMap, (getSituationDescription "4"))
+moveTo "4" "carretera" objectsMap = ("5", objectsMap, (getSituationDescription "5"))
+moveTo situation _ objectsMap = (situation, objectsMap, "No puedes ir ahí")
