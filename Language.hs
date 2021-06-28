@@ -18,6 +18,8 @@ verbs =
         ("dejar", "dejar"),
         ("ignorar", "dejar"),
 
+        ("usar", "usar"),
+
         ("disparar", "disparar"),
         ("matar", "disparar"),
 
@@ -36,6 +38,7 @@ verbs =
         ("ver", "inspeccionar"),
         ("registrar", "inspeccionar"),
         ("abrir", "inspeccionar"),
+        ("revisar", "inspeccionar"),
 
         ("esperar", "esperar"),
 
@@ -47,6 +50,14 @@ verbs =
         ("decir", "contar"),
         ("decirle", "contar"),
 
+        ("pagar", "pagar"),
+        ("pago", "pagar"),
+        ("acepto", "pagar"),
+        ("aceptar", "pagar"),
+        ("dar", "pagar"),
+        ("montar", "pagar"),
+        ("montarme", "pagar"),
+
         ("salir", "salir")
     ]
 
@@ -55,16 +66,40 @@ nouns :: [(Noun, Noun)]
 nouns =
     [
         ("saco", "saco"),
-        ("gabetero", "gabetero"),
+
+        ("gavetero", "gavetero"),
+        ("gavetas", "gavetero"),
+
         ("cabaña", "cabaña"),
+        ("cabana", "cabaña"),
+        ("habitacion", "cabaña"),
+        ("habitación", "cabaña"),
+
         ("documento", "documento"),
-        ("billetes", "billetes"),
-        ("objetos", "objetos"),
-        ("cuerpo", "cuerpo"),
-        ("carretera", "carretera"),
-        ("pistola", "pistola"),
-        ("placa", "placa"),
+        ("papel", "documento"),
+
         ("conductor", "conductor"),
+        ("chofer", "conductor"),
+        ("mecánico", "conductor"),
+
+        ("billetes", "billetes"),
+        ("dinero", "billetes"),
+
+        ("cuerpo", "cuerpo"),
+        ("cadaver", "cuerpo"),
+        ("muerto", "muerto"),
+
+        ("carretera", "carretera"),
+
+        ("pistola", "pistola"),
+        ("arma", "pistola"),
+
+        ("placa", "placa"),
+
+
         ("perseguidores", "perseguidores"),
-        ("coche", "coche")
+        ("secuestradores" , "perseguidores"),
+
+        ("coche", "coche"),
+        ("carro", "coche")
     ]

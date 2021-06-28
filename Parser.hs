@@ -36,5 +36,5 @@ getObject input (object:r) =
 parser :: String -> ObjectMap -> [(Verb, Verb)] -> [(Noun, Noun)] -> Action
 parser line objectsMap verbs nouns =
     let command = words line
-        objects = [obj | (obj, situation) <- objectsMap]
+        objects = [obj | (obj, _) <- objectsMap]
     in ((getVerb command verbs, getNoun command nouns), getObject command objects)

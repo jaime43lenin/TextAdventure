@@ -9,8 +9,9 @@ executeAction :: SituationId -> Action -> ObjectMap -> World
 executeAction "1" (("quitar", "saco"), _) objectsMap = ("2", objectsMap, getSituationDescription "2")
 executeAction "1" _ objectsMap = ("1", objectsMap, "No puedes ver nada, tienes la cabeza cubierta con un saco")
 
-executeAction "2" (("inspeccionar", "gabetero"), _) objectsMap = inspectObject "2" objectsMap
+executeAction "2" (("inspeccionar", "gavetero"), _) objectsMap = inspectObject "2" objectsMap
 executeAction "2" (("salir", "cabaña"), _) objectsMap = ("3", objectsMap, (getSituationDescription "3"))
+executeAction "2" (("inspeccionar", "cabaña"), _) objectsMap = ("2", objectsMap, "Parece que no hay más nada interesante en esta habitación")
 executeAction "2" _ objectsMap = ("2", objectsMap, "Esa acción no tiene ningún efecto")
 
 executeAction "2.1" (("tomar", "documento"), _) objectsMap = takeObject "documento" objectsMap "2.1"
@@ -42,7 +43,7 @@ executeAction "4" _ objectsMap = ("4", objectsMap, "Esa acción no tiene ningún
 executeAction "5" (("pagar", "conductor"), "billetes") objectsMap = useObject "billetes" "conductor" objectsMap "5"
 executeAction "5" (("amenazar", "conductor"), "pistola") objectsMap = useObject "pistola" "conductor" objectsMap "5"
 executeAction "5" (("dejar", "conductor"), _) objectsMap = ("12", objectsMap, (getSituationDescription "12"))
-executeAction "5" _ objectsMap = ("5", objectsMap, "Esa acción no tiene ningún efecto")
+executeAction "5" _ objectsMap = ("5", objectsMap,"Esa acción no tiene efecto")
 
 executeAction "6" (("contar", "conductor"), _) objectsMap = ("7", objectsMap, (getSituationDescription "7"))
 executeAction "6" _ objectsMap = ("6", objectsMap, "Esa acción no tiene ningún efecto")

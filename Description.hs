@@ -37,9 +37,9 @@ getSituationDescription "1" =
 getSituationDescription "2" =
     "Al quitarte el saco de la cabeza te percatas que estas en el interior de una habitación\n"
     ++"logras recuperar casi completamente tus sentidos pudiendo ver que la puerta no tiene \n"
-    ++"seguro y que hay un gabetero detrás tuyo"
+    ++"seguro y que hay un gavetero detrás tuyo"
 getSituationDescription "2.1" = 
-    "Abres el gabetero y encuentras " --un documento con todos tus datos firmado por el departamento de policia y 2 billetes de 20 dolares
+    "Abres el gavetero y encuentras " --un documento con todos tus datos firmado por el departamento de policia y 2 billetes de 20 dolares
 getSituationDescription "3" =
     "Logras abrir la puerta. Te das cuenta que estás en una cabaña en una ladera de una montaña\n"
     ++"Miras a tu alrededor y puedes ver que está atardeciendo, se puede ver a lo lejos una carretera.\n"
