@@ -15,7 +15,6 @@ module Tools (Status,
               ) where
 
 import Data.List
-import Commands
 
 type Status = String
 type Object = String

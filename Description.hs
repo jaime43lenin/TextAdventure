@@ -2,6 +2,8 @@ module Description (getObjectsDescription,
                     getObjectHere,
                     getSituationDescription) where
 
+import Data.List
+
 import Tools
 
 
@@ -16,7 +18,7 @@ getObjectsDescription "placa" = "una placa de inspector"
 -- return the objects in a especific situation
 getObjectHere :: SituationId -> ObjectMap -> String
 getObjectHere situation objectsMap =
-    let objectsHere = [getObjectsDescription obj | (obj, sit) <- objectsMap, sit == situacion]
+    let objectsHere = [getObjectsDescription obj | (obj, sit) <- objectsMap, sit == situation]
     in intercalate ", " objectsHere
 
 
@@ -64,9 +66,9 @@ getSituationDescription "7" =
 getSituationDescription "8" =
     "El conductor decide acelerar y los que los persiguen comienzan a disparar"
 getSituationDescription "9" = --Final
-	"Logras en el último disparo herir al conductor del otro vehículo sacándolos así de la carretera\n"
-	++"lo que les permite escapar.\n"
-	++"Después de unas horas llegan a tu casa a salvo con tu familia"
+    "Logras en el último disparo herir al conductor del otro vehículo sacándolos así de la carretera\n"
+    ++"lo que les permite escapar.\n"
+    ++"Después de unas horas llegan a tu casa a salvo con tu familia"
 getSituationDescription "10" = --Final
 	"Entre los choques de la persecución y los disparos hieren al chofer del auto en el que vas saliendose\n"
 	++"este de la carretera\n"
@@ -77,15 +79,15 @@ getSituationDescription "11" = --Final
 	++"cuenta que los habías llevado hasta donde estaba tu familia\n"
 	++"Todos son asesinados en el interior de la casa\n"
 getSituationDescription "12" = 
-	"Se acerca un coche de policía. Este al verte se detiene se te acerca y te pregunta si eres de por aquí. Reconoces\n"
-	++"la voz como uno de los secuestradores...\n"
+    "Se acerca un coche de policía. Este al verte se detiene se te acerca y te pregunta si eres de por aquí. Reconoces\n"
+    ++"la voz como uno de los secuestradores...\n"
 getSituationDescription "13" = 
-	"Logras acabar con el secuestrador ahora estás solo con un cadaver uniformado, un coche de policía\n"
+    "Logras acabar con el secuestrador ahora estás solo con un cadaver uniformado, un coche de policía\n"
 getSituationDescription "14" = --Final
-	"El secuestrador te atrapa nuevamente, esta vez te meten en el baúl del coche"
+    "El secuestrador te atrapa nuevamente, esta vez te meten en el baúl del coche"
 getSituationDescription "15" = --Final
-	"Huyes en el coche de policía logrando llegar a salvo a casa"
+    "Huyes en el coche de policía logrando llegar a salvo a casa"
 getSituationDescription "16" = --Final
-	"Mueres al caer la noche, estabas muy débil y los animales se adueñan de tu cuerpo"
+    "Mueres al caer la noche, estabas muy débil y los animales se adueñan de tu cuerpo"
 getSituationDescription "17" =
-	"La situación se pone tensa el conductor acelera y disparas hiriéndolo y al perder el control este cae por la ladera\n"
+    "La situación se pone tensa el conductor acelera y disparas hiriéndolo y al perder el control este cae por la ladera\n"

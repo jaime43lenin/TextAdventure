@@ -5,6 +5,7 @@ import Tools
 import Parser
 import Language
 import SituationsActions
+import Description
 
 
 -- Introduction of textAdveture
@@ -27,24 +28,28 @@ gameOver situacion =
 -- execute an action
 execute :: Action -> SituationId -> ObjectMap -> World
 execute ((verb, noun), object) situation objectsMap
-    | verb == "c" = (situacion, objectsMap, getCommands)
-    | verb == "i" = (situacion, objectsMap, getInventory)
-    | verb == "h" = (situacion, objectsMap, getHelp)
-    | otherwise = executeAction situacion ((verb, noun), object) objectsMap
+    | verb == "c" = (situation, objectsMap, getCommands)
+    | verb == "i" = (situation, objectsMap, getInventory objectsMap)
+    | verb == "h" = (situation, objectsMap, getHelp)
+    | otherwise = executeAction situation ((verb, noun), object) objectsMap
 
 
-play :: IO (World) -> IO (World)
+play :: World -> IO (World)
 play (situation, objectsMap, response) = do
     putStrLn response
     putStrLn "\n"
-    if gameOver objectsMap  -- hacer gameOver
+    if gameOver situation
         then return ("", [], "")
         else do
             putStr ">> "
             input <- getLine
-            action <- parser input objectsMap verbs nouns
-            world <- execute action situation objectsMap
-            play world
+            if input == "s"
+                then return (situation, objectsMap, "Hasta Pronto!!!")
+                else play (execute (parser input objectsMap verbs nouns) situation objectsMap)
+
+            --action <- parser input objectsMap verbs nouns
+            --world <- execute action situation objectsMap
+            --play $ return world
 
 
 -- Start
@@ -53,8 +58,7 @@ main = do
     printIntro
     putStr "Comencemos...\n"
     putStrLn ("\nEstos comandos son comandos que puedes usar")
-    getCommands
+    putStrLn getCommands
     putStr "Presiona Enter para continuar..."
     getLine
     play ("1", objectsMap, (getSituationDescription "0") ++ (getSituationDescription "1"))
-    return ("", [], "")  
