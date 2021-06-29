@@ -13,6 +13,7 @@ executeAction "2" (("inspeccionar", "gavetero"), _) objectsMap = inspectObject "
 executeAction "2" (("cerrar", "gavetero"), _) objectsMap = ("2", objectsMap, "Vale. Y ahora...")
 executeAction "2" (("salir", "cabaña"), _) objectsMap = ("3", objectsMap, (getSituationDescription "3"))
 executeAction "2" (("inspeccionar", "puerta"), _) objectsMap = ("3", objectsMap, (getSituationDescription "3"))
+executeAction "2" (("ir", "puerta"), _) objectsMap = ("3", objectsMap, (getSituationDescription "3"))
 executeAction "2" (("inspeccionar", "cabaña"), _) objectsMap = ("2", objectsMap, "Parece que no hay más nada interesante en esta habitación")
 executeAction "2" _ objectsMap = ("2", objectsMap, "Esa acción no tiene ningún efecto")
 
@@ -26,6 +27,7 @@ executeAction "2.1" (("tomar", "nada"), _) objectsMap = ("2.1", objectsMap, "Com
     --in world
 executeAction "2.1" (("salir", "cabaña"), _) objectsMap = ("3", objectsMap, (getSituationDescription "3"))
 executeAction "2.1" (("inspeccionar", "puerta"), _) objectsMap = ("3", objectsMap, (getSituationDescription "3"))
+executeAction "2.1" (("ir", "puerta"), _) objectsMap = ("3", objectsMap, (getSituationDescription "3"))
 executeAction "2.1" _ objectsMap = ("2.1", objectsMap, "Esa acción no tiene ningún efecto")
 
 executeAction "3" (("inspeccionar","cuerpo"), _) objectsMap = inspectObject "3" objectsMap
