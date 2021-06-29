@@ -20,7 +20,7 @@ getInventory objectsMap =
     let player_objects = [object | (object, "inventory") <- objectsMap]
     in if player_objects == []
         then ("Inventario\n" ++ "-----------\n" ++ "El inventario está vacío")
-        else ("Inventario\n" ++ "-----------\n" ++ (unlines (map (++"\n") player_objects)))
+        else ("Inventario\n" ++ "-----------\n" ++ (unlines (map (++"") player_objects)))
 
 
 getHelp :: String
