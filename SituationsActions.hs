@@ -12,6 +12,7 @@ executeAction "1" _ objectsMap = ("1", objectsMap, "Cuidado!! No puedes ver nada
 executeAction "2" (("inspeccionar", "gavetero"), _) objectsMap = inspectObject "2" objectsMap
 executeAction "2" (("cerrar", "gavetero"), _) objectsMap = ("2", objectsMap, "Vale. Y ahora...")
 executeAction "2" (("salir", "cabaña"), _) objectsMap = ("3", objectsMap, (getSituationDescription "3"))
+executeAction "2" (("inspeccionar", "puerta"), _) objectsMap = ("3", objectsMap, (getSituationDescription "3"))
 executeAction "2" (("inspeccionar", "cabaña"), _) objectsMap = ("2", objectsMap, "Parece que no hay más nada interesante en esta habitación")
 executeAction "2" _ objectsMap = ("2", objectsMap, "Esa acción no tiene ningún efecto")
 
@@ -48,7 +49,7 @@ executeAction "4" _ objectsMap = ("4", objectsMap, "Esa acción no tiene ningún
 
 executeAction "5" (("pagar", _), _) objectsMap = useObject "billetes" "conductor" objectsMap "5"
 executeAction "5" (("amenazar", _), _) objectsMap = useObject "pistola" "conductor" objectsMap "5"
-executeAction "5" (("dejar", _), _) objectsMap = ("12", objectsMap, (getSituationDescription "12"))
+executeAction "5" (("dejar ir", _), _) objectsMap = ("12", objectsMap, (getSituationDescription "12"))
 executeAction "5" _ objectsMap = ("5", objectsMap,"Esa acción no tiene efecto")
 
 executeAction "6" (("contar", "conductor"), _) objectsMap = ("7", objectsMap, (getSituationDescription "7"))

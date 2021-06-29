@@ -6,10 +6,11 @@ import Data.List
 
 
 -- get the verb in the player input
-getVerb :: [String] -> [(Verb, Verb)] -> Verb 
+getVerb :: String -> [(Verb, Verb)] -> Verb 
 getVerb input [] = "none"
 getVerb input ((inp, verb):r) =
-    if inp `elem` input
+    if ((" " ++ inp) `isPrefixOf` input) || ((" " ++ inp ++ " ") `isPrefixOf` input) || 
+        ((inp ++ " ") `isPrefixOf` input) || inp `isPrefixOf` input
         then verb
         else getVerb input r
 
@@ -37,4 +38,4 @@ parser :: String -> ObjectMap -> [(Verb, Verb)] -> [(Noun, Noun)] -> Action
 parser line objectsMap verbs nouns =
     let command = words line
         objects = [obj | (obj, _) <- objectsMap]
-    in ((getVerb command verbs, getNoun command nouns), getObject command objects)
+    in ((getVerb line verbs, getNoun command nouns), getObject command objects)

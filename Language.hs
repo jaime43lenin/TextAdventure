@@ -7,27 +7,27 @@ import Tools
 verbs :: [(Verb, Verb)]
 verbs =
     [
-        ("ir", "ir"),
-        ("irme", "ir"),
-        ("irse", "ir"),
-        ("caminar", "ir"),
-        ("correr", "ir"),
-        ("dirigirse", "ir"),
-        ("dirigirme", "ir"),
-
-        ("dejar", "dejar"),
-        ("dejarlo", "dejar"),
-        ("ignorar", "dejar"),
-        ("ignorarlo", "dejar"),
+        ("dejar ir", "dejar ir"),
+        ("dejarlo", "dejar ir"),
+        ("dejo", "dejar ir"),
+        ("ignorar", "dejar ir"),
+        ("ignoro", "ignorar"),
+        ("ignorarlo", "dejar ir"),
 
         ("usar", "usar"),
+        ("uso", "uso"),
 
         ("disparar", "disparar"),
+        ("disparo", "disparar"),
         ("matar", "disparar"),
+        ("mato", "disparar"),
+        ("atacar", "disparar"),
+        ("ataco", "disparar"),
 
         ("quitar", "quitar"),
         ("quitarme", "quitar"),
         ("quito", "quitar"),
+        ("me quito", "quitar"),
         ("deshacerme", "quitar"),
         ("librarme", "quitar"),
 
@@ -35,14 +35,19 @@ verbs =
         ("escapar", "huir"),
 
         ("tomar", "tomar"),
+        ("tomo", "tomar"),
         ("coger", "tomar"),
+        ("cojo", "tomar"),
+        ("agarrar", "tomar"),
 
         ("inspeccionar", "inspeccionar"),
         ("investigar", "inspeccionar"),
         ("ver", "inspeccionar"),
         ("registrar", "inspeccionar"),
         ("abrir", "inspeccionar"),
+        ("abro", "inspeccionar"),
         ("revisar", "inspeccionar"),
+        ("reviso", "inspeccionar"),
 
         ("esperar", "esperar"),
 
@@ -70,7 +75,15 @@ verbs =
         ("montar", "pagar"),
         ("montarme", "pagar"),
 
-        ("salir", "salir")
+        ("salir", "salir"),
+
+        ("ir", "ir"),
+        ("irme", "ir"),
+        ("irse", "ir"),
+        ("caminar", "ir"),
+        ("correr", "ir"),
+        ("dirigirse", "ir"),
+        ("dirigirme", "ir"),
 
         ("c", "c"),
         ("i", "i"),
@@ -85,6 +98,7 @@ nouns =
 
         ("gavetero", "gavetero"),
         ("gavetas", "gavetero"),
+        ("gaveta", "gavetero"),
 
         ("cabaña", "cabaña"),
         ("cabana", "cabaña"),
@@ -100,6 +114,8 @@ nouns =
 
         ("billetes", "billetes"),
         ("dinero", "billetes"),
+        ("dolares", "billetes"),
+        ("dólares", "billetes"),
 
         ("cuerpo", "cuerpo"),
         ("cadaver", "cuerpo"),
