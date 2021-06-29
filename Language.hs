@@ -7,16 +7,18 @@ import Tools
 verbs :: [(Verb, Verb)]
 verbs =
     [
-        ("c", "c"),
-        ("i", "i"),
-        ("h", "h"),
-
         ("ir", "ir"),
+        ("irme", "ir"),
+        ("irse", "ir"),
         ("caminar", "ir"),
         ("correr", "ir"),
+        ("dirigirse", "ir"),
+        ("dirigirme", "ir"),
 
         ("dejar", "dejar"),
+        ("dejarlo", "dejar"),
         ("ignorar", "dejar"),
+        ("ignorarlo", "dejar"),
 
         ("usar", "usar"),
 
@@ -25,6 +27,7 @@ verbs =
 
         ("quitar", "quitar"),
         ("quitarme", "quitar"),
+        ("quito", "quitar"),
         ("deshacerme", "quitar"),
         ("librarme", "quitar"),
 
@@ -45,14 +48,22 @@ verbs =
 
         ("amenazar", "amenazar"),
         ("intimidar", "amenazar"),
+        ("apuntarle", "amenazar"),
 
         ("contar", "contar"),
         ("contarle", "contar"),
+        ("cuento", "contar"),
         ("decir", "contar"),
         ("decirle", "contar"),
+        ("digo", "contar"),
+        ("avisar", "contar"),
+        ("aviso", "contar"),
+        ("advertir", "contar"),
+        ("advierto", "contar"),
 
         ("pagar", "pagar"),
         ("pago", "pagar"),
+        ("pagarle", "pagar"),
         ("acepto", "pagar"),
         ("aceptar", "pagar"),
         ("dar", "pagar"),
@@ -60,6 +71,10 @@ verbs =
         ("montarme", "pagar"),
 
         ("salir", "salir")
+
+        ("c", "c"),
+        ("i", "i"),
+        ("h", "h")
     ]
 
 
@@ -103,5 +118,7 @@ nouns =
         ("placa", "placa"),
 
         ("coche", "coche"),
-        ("carro", "coche")
+        ("carro", "coche"),
+
+        ("puerta", "puerta")
     ]

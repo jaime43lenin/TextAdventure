@@ -1,4 +1,5 @@
 module Actions (takeObject,
+                takeAll,
                 dropObject,
                 useObject,
                 inspectObject,
@@ -18,6 +19,19 @@ takeObject object objectsMap situation =
             if objectSituation == "inventory"
                 then (situation, objectsMap, "Ya tienes ese objeto en el inventario")
                 else (situation, objectsMap, "Mmmm... ese objeto no está aquí")
+
+
+-- the player take all the posible objects
+takeAll :: SituationId -> ObjectMap -> World
+takeAll "2.1" objectsMap =
+    let (_, objectsMap_1, _) = takeObject "documento" objectsMap "2.1"
+        world = takeObject "billetes" objectsMap_1 "2.1"
+    in world
+
+takeAll "3.1" objectsMap =
+    let (_, objectsMap_1, _) = takeObject "pistola" objectsMap "3.1"
+        world = takeObject "placa" objectsMap_1 "3.1"
+    in world
 
 
 -- the player drop an object
