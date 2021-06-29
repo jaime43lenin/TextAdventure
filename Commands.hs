@@ -9,10 +9,10 @@ import Tools
 
 getCommands :: String
 getCommands = "Comandos \n"
-              ++"c           -- comandos \n"
-              ++"i           -- inventario \n"
-              ++"h           -- ayuda \n"       
-              ++"s           -- salir del juego\n"
+              ++"-c           -- comandos \n"
+              ++"-i           -- inventario \n"
+              ++"-h           -- ayuda \n"       
+              ++"-s           -- salir del juego\n"
 
 
 getInventory :: ObjectMap -> String
@@ -26,9 +26,10 @@ getInventory objectsMap =
 getHelp :: String
 getHelp = "Utiliza oraciones simples describiendo la acción que deseas realizar según \n"
            ++"la situación.\n"
-           ++"Todo lo que escribas debe estar en minúsculas y ser lo más claro posible en tus ideas\n"
+           ++"Todo lo que escribas debe estar en minúsculas y ser lo más claro posible en tus ideas. Trata\n"
+           ++"de mencionar el sujeto (sustantivo) al cual va dirigido la accion que realices\n"
            ++"Ejemplo -- caminar a la puerta\n"
-           ++"            salir de la habitacion" 
+           ++"           salir de la habitacion" 
 
 
 quit :: String

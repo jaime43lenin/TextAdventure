@@ -44,6 +44,7 @@ verbs =
         ("investigar", "inspeccionar"),
         ("ver", "inspeccionar"),
         ("registrar", "inspeccionar"),
+        ("registro", "inspeccionar"),
         ("abrir", "inspeccionar"),
         ("abro", "inspeccionar"),
         ("revisar", "inspeccionar"),
@@ -73,21 +74,26 @@ verbs =
         ("aceptar", "pagar"),
         ("dar", "pagar"),
         ("montar", "pagar"),
+        ("monto", "pagar"),
         ("montarme", "pagar"),
 
         ("salir", "salir"),
+        ("salgo", "salir"),
 
         ("ir", "ir"),
         ("irme", "ir"),
         ("irse", "ir"),
         ("caminar", "ir"),
+        ("camino", "ir"),
         ("correr", "ir"),
+        ("corro", "ir"),
         ("dirigirse", "ir"),
         ("dirigirme", "ir"),
+        ("voy", "ir")
 
-        ("c", "c"),
-        ("i", "i"),
-        ("h", "h")
+        ("-c", "c"),
+        ("-i", "i"),
+        ("-h", "h")
     ]
 
 
@@ -136,5 +142,6 @@ nouns =
         ("coche", "coche"),
         ("carro", "coche"),
 
-        ("puerta", "puerta")
+        ("puerta", "puerta"),
+        ("todo", "todo")
     ]

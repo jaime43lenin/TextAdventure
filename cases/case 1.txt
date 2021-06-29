@@ -1,0 +1,97 @@
+Al caer la tarde estas llegando a casa cuando de repente se nubla tu vista,
+pierdes el control de tu cuerpo y todo lo que vez son destellos de luz...
+
+Recobras la conciencia y escuchas voces, te percatas que tienes
+la cabeza tapada con una especie de saco negro y percibes que estas en un coche en movimiento... 
+El coche se detiene y te bajan a rastras, sientes frío y la hierba húmeda en tus pies descalzos,
+No tienes fuerzas siquiera para hablar y no entiendes bien lo que hablan, logras identificar otro
+idioma pero no lo tienes claro y te dejan tendido en el suelo.
+Sientes que las voces se alejan, escuchas un disparo...
+
+>> me quito el saco de la cabeza
+
+Al quitarte el saco de la cabeza te percatas que estas en el interior de una habitación
+logras recuperar casi completamente tus sentidos pudiendo ver que la puerta no tiene 
+seguro y que hay un gavetero detrás tuyo
+
+>> revisar el gavetero
+
+Abres el gavetero y encuentras un documento con todos tus datos firmado por departamento de policía, 2 billetes de 20 dolares
+
+>> coger solo los billetes
+Has agregado el objeto a tu inventario
+
+>> abrir la puerta
+
+Logras abrir la puerta. Te das cuenta que estás en una cabaña en una ladera de una montaña
+Miras a tu alrededor y puedes ver que está atardeciendo, se puede ver a lo lejos una carretera.
+Pero antes de tomar cualquier decisión...
+tienes a tus pies un cuerpo con un tiro en la sien
+
+>> correr hacia la carretera
+
+En shock todavía pero con la vista clara llegas a la carretera y ves que está al borde de la ladera
+Te recuestas a la baranda para no caerte al vacío y recuperar fuerzas
+
+>> caminar por la carretera
+
+Llevas un rato ya caminando, intentando bajar de la montaña cada vez con menos fuerzas...
+se acerca un coche y al verte en se detiene...El conductor, un hombre no muy bien vestido con un tabaco en la boca y manos de mecánico, te
+ofrece llevarte al pueblo más cercano por 40 dólares
+
+>> acepto  
+
+Le pagas con los billetes que habías encontrado en la cabaña y te subes al auto
+El conductor te pregunta que hacías divagando por la carretera solo y cerca de 
+la noche
+
+>> contarle la verdad al conductor
+
+Tras contarle lo sucedido al conductor decide llevarte hasta tu casa con tu familia...
+Dada la longitud del recorrido paran en una gasolinera. Luego de reanudar el viaje te das cuenta que los
+están siguiendo en un auto
+
+>> aviso al conductor que nos siguen
+
+El conductor decide acelerar y los que los persiguen comienzan a disparar
+
+>> dispparar a los preseguidores
+Esa acción no tiene ningún efecto
+
+>> disparar a los perseguidores
+
+Logras en el último disparo herir al conductor del otro vehículo sacándolos así de la carretera
+lo que les permite escapar.
+Después de unas horas llegan a tu casa a salvo con tu familia
+
+
+En shock todavía pero con la vista clara llegas a la carretera y ves que está al borde de la ladera
+Te recuestas a la baranda para no caerte al vacío y recuperar fuerzas
+
+>> caminar por la carretera
+
+Llevas un rato ya caminando, intentando bajar de la montaña cada vez con menos fuerzas...
+se acerca un coche y al verte en se detiene...El conductor, un hombre no muy bien vestido con un tabaco en la boca y manos de mecánico, te
+ofrece llevarte al pueblo más cercano por 40 dólares
+
+>> acepto
+
+Le pagas con los billetes que habías encontrado en la cabaña y te subes al auto
+El conductor te pregunta que hacías divagando por la carretera solo y cerca de
+la noche
+
+>> contarle la verdad al conductor
+
+Tras contarle lo sucedido al conductor decide llevarte hasta tu casa con tu familia...
+Dada la longitud del recorrido paran en una gasolinera. Luego de reanudar el viaje te das cuenta que los
+están siguiendo en un auto
+
+>> aviso al conductor que nos siguen
+
+El conductor decide acelerar y los que los persiguen comienzan a disparar
+
+>> disparar a los perseguidores
+
+Logras en el último disparo herir al conductor del otro vehículo sacándolos así de la carretera
+lo que les permite escapar.
+Después de unas horas llegan a tu casa a salvo con tu familia

@@ -43,8 +43,8 @@ play (situation, objectsMap, response) = do
         else do
             putStr ">> "
             input <- getLine
-            if input == "s"
-                then return (situation, objectsMap, "Hasta Pronto!!!")
+            if input == "-s"
+                then return ("", [], "Hasta Pronto!!!")
                 else play (execute (parser input objectsMap verbs nouns) situation objectsMap)
 
             --action <- parser input objectsMap verbs nouns
