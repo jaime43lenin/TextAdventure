@@ -52,10 +52,10 @@ executeAction "5" (("amenazar", _), _) objectsMap = useObject "pistola" "conduct
 executeAction "5" (("dejar ir", _), _) objectsMap = ("12", objectsMap, (getSituationDescription "12"))
 executeAction "5" _ objectsMap = ("5", objectsMap,"Esa acción no tiene efecto")
 
-executeAction "6" (("contar", "conductor"), _) objectsMap = ("7", objectsMap, (getSituationDescription "7"))
+executeAction "6" (("contar", _), _) objectsMap = ("7", objectsMap, (getSituationDescription "7"))
 executeAction "6" _ objectsMap = ("6", objectsMap, "Esa acción no tiene ningún efecto")
 
-executeAction "7" (("contar", "conductor"), _) objectsMap = ("8", objectsMap, (getSituationDescription "8"))
+executeAction "7" (("contar", _), _) objectsMap = ("8", objectsMap, (getSituationDescription "8"))
 executeAction "7" _ objectsMap = ("7", objectsMap, "Esa acción no tiene ningún efecto")
 
 executeAction "8" (("disparar", "perseguidores"), _) objectsMap = useObject "pistola" "perseguidores" objectsMap "8"
@@ -66,7 +66,7 @@ executeAction "10" _ objectsMap = ("10", objectsMap, (getSituationDescription "1
 executeAction "11" _ objectsMap = ("11", objectsMap, (getSituationDescription "11"))
 
 executeAction "12" (("disparar", "policia"), _) objectsMap = useObject "pistola" "policia" objectsMap "12"
-executeAction "12" _ objectsMap = ("12", objectsMap, "Esa acción no tiene ningún efecto")
+executeAction "12" _ objectsMap = ("14", objectsMap, (getSituationDescription "14"))
 
 executeAction "13" (("huir", "coche"), "") objectsMap = ("15", objectsMap, (getSituationDescription "15"))
 executeAction "13" _ objectsMap = ("13", objectsMap, "Esa acción no tiene ningún efecto")

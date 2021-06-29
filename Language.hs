@@ -32,17 +32,23 @@ verbs =
         ("librarme", "quitar"),
 
         ("huir", "huir"),
+        ("huyo", "huir"),
         ("escapar", "huir"),
+        ("escapo", "huir"),
 
         ("tomar", "tomar"),
         ("tomo", "tomar"),
         ("coger", "tomar"),
         ("cojo", "tomar"),
         ("agarrar", "tomar"),
+        ("agarro", "tomar"),
 
         ("inspeccionar", "inspeccionar"),
+        ("inspecciono", "inspeccionar"),
         ("investigar", "inspeccionar"),
+        ("investigo", "inspecccionar"),
         ("ver", "inspeccionar"),
+        ("veo", "inspeccionar"),
         ("registrar", "inspeccionar"),
         ("registro", "inspeccionar"),
         ("abrir", "inspeccionar"),
@@ -51,10 +57,13 @@ verbs =
         ("reviso", "inspeccionar"),
 
         ("esperar", "esperar"),
+        ("espero", "esperar"),
 
         ("amenazar", "amenazar"),
+        ("amenazo", "amenazar"),
         ("intimidar", "amenazar"),
         ("apuntarle", "amenazar"),
+        ("apunto", "amenazar"),
 
         ("contar", "contar"),
         ("contarle", "contar"),
@@ -73,6 +82,7 @@ verbs =
         ("acepto", "pagar"),
         ("aceptar", "pagar"),
         ("dar", "pagar"),
+        ("doy", "pagar"),
         ("montar", "pagar"),
         ("monto", "pagar"),
         ("montarme", "pagar"),
@@ -89,7 +99,7 @@ verbs =
         ("corro", "ir"),
         ("dirigirse", "ir"),
         ("dirigirme", "ir"),
-        ("voy", "ir")
+        ("voy", "ir"),
 
         ("-c", "c"),
         ("-i", "i"),
